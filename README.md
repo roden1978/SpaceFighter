@@ -1,2 +1,9 @@
 # SpaceFighter
 2D space shooter
+
+Чтобы проект запускался из Rider нужно скопировать файл content.dat
+по пути SpaceFighter\bin\Debug\net8 (в зависимости от версии .net)
+можно сразу запустить скомпилированный SpaceFighter.exe
+
+
+Так же можно запустить прямо из папки с проектом командой dotnet run из консоли
