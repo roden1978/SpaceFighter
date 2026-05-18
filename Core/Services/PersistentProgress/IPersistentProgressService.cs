@@ -1,5 +1,7 @@
+using System.Threading.Tasks;
+
 public interface IPersistentProgressService
 {
-    void Load();
-    void Save(Result result);
+    Task Load();
+    Task Save(Result result);
 }

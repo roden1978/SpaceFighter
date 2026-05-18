@@ -20,7 +20,7 @@ public class PersistentProgressService : IPersistentProgressService
             _data.Results.Add(new Result());
         return _data;
     }
-    public async void Load()
+    public async Task Load()
     {
         _data = _saveLoadService.Load() ?? CreateResultsData();
         await _dBService.Get(_leaderboardService.Leaders, _data);
@@ -28,7 +28,7 @@ public class PersistentProgressService : IPersistentProgressService
         UpdateLeadersData();
     }
 
-    public async void Save(Result result)
+    public async Task Save(Result result)
     {
         if (result.Value == 0) return;
 
